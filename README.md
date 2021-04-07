@@ -74,3 +74,6 @@ public static void show(){
     });
 }
 ```
+
+We can also store a lambda expression in a variable
+`Printer printer = message -> System.out.print(message);`
