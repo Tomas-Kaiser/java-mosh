@@ -109,5 +109,24 @@ interfaces in java:
     - Represents an operation that takes an object and check the see if that 
     object satisfies some criteria. We use this for filtering data eg.: we can
     get customers who do not have a phone number.
+
+### Consumer Interface
+
+The consumer interface represents an operation that takes a single argument
+and does not return a value.
+
+```
+list<Integer> list = List.of(1,2,3);
+
+// Imperative programming (for, if/else, switch). How something should be done
+for (var item : list)
+    System.out.println(item);
     
+// Declerative programming. What needs to be done
+list.forEach(item -> System.out.println(item));
+
+// Or we can use method reference here
+list.forEach(System.out::println);
+
+```
  
