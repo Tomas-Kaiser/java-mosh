@@ -12,7 +12,9 @@ programming techniques in java. We are talking about:
     
 ## Functional Interface
 
-A functional interface is an interface with a single abstract method.
+A functional interface is an interface with a single abstract method. Does not
+matter if the interface contains default or static method unless it has just one
+abstract method.
 
 ### Anonymous Inner Class
 
