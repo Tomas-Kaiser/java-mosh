@@ -130,3 +130,24 @@ list.forEach(System.out::println);
 
 ```
  
+ #### Chaining Consumer
+ 
+ We can chain consumer as follow:
+ 
+```
+ List<String> list = List.of("a", "b", "c");
+ Consumer<String> print = item -> System.out.println(item);
+ Consumer<String> printUpperCase = item -> System.out.println(item.toUpperCase());
+ 
+ list.forEach(print.andThen(printUpperCase));
+ 
+ Output:
+ a
+ A
+ b
+ B
+ c
+ C
+```
+
+
