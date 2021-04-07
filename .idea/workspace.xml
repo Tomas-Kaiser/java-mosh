@@ -34,11 +34,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tomas/lambdas/LambdasDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="114">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="21" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#929#930#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +70,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="370">
-                <caret line="170" column="27" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
+              <first_editor relative-caret-position="326">
+                <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
               </first_editor>
               <second_editor />
             </state>
@@ -260,11 +260,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tomas/lambdas/LambdasDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="114">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -272,8 +272,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="370">
-            <caret line="170" column="27" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
+          <first_editor relative-caret-position="326">
+            <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
           </first_editor>
           <second_editor />
         </state>
