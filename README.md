@@ -77,3 +77,15 @@ public static void show(){
 
 We can also store a lambda expression in a variable
 `Printer printer = message -> System.out.print(message);`
+
+### Method References
+
+It easier to read and write lambda expression.
+
+Instead of `greet(message -> System.out.println(message));` we can write
+only `greet(System.out::println);`
+
+The pattern is `Class/Object::method`
+
+`greet(LambdasDemo::new)` is calling a constructor of the LambdasDemo class.
+
