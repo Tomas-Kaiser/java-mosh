@@ -89,3 +89,25 @@ The pattern is `Class/Object::method`
 
 `greet(LambdasDemo::new)` is calling a constructor of the LambdasDemo class.
 
+## Built-in Functional Interfaces
+
+Java provides many predefine functions interfaces that we can use to perform
+common tasks [Package java.util.function](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/package-summary.html).
+
+There much more functions but basically we have just 4 types of functional
+interfaces in java:
+
+- Consumer
+    - The consumer interface represents an operation that takes a single argument
+    and returns no result. Consumer => consume a value.
+- Supply
+    - It is an opposite of consumer interface. It represents an operation that
+    takes no input and returns a value.
+- Function
+    - Represents a function that map a value to different value.
+- Predicate
+    - Represents an operation that takes an object and check the see if that 
+    object satisfies some criteria. We use this for filtering data eg.: we can
+    get customers who do not have a phone number.
+    
+ 
