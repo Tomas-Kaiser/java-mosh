@@ -162,3 +162,13 @@ System.out.println(random);
 
 The function `() -> Math.random()` is not executed until we explicitly we call it
 `getRandom.get()`. This is called a lazy evaluation.
+
+### Function Interface
+
+The function interface represents a function that map a value to different value.
+
+``` 
+Function<String, Integer> map = str -> str.length();
+int length = map.apply("Sky");
+System.out.println(length);
+```
