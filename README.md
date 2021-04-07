@@ -150,4 +150,15 @@ list.forEach(System.out::println);
  C
 ```
 
+### Supplier Interface
 
+Is an opposite of consume interface. It supplies a value.
+
+```
+Supplier<Double> getRandom = () -> Math.random();
+double random = getRandom.get();
+System.out.println(random);
+```
+
+The function `() -> Math.random()` is not executed until we explicitly we call it
+`getRandom.get()`. This is called a lazy evaluation.
