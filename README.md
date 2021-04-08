@@ -212,3 +212,39 @@ Predicate<String> hasLeftAndRightBrace = hasRightBrace.and(hasLeftBrace);
 Boolean res = hasLeftAndRightBrace.test("{key=value}");
 System.out.println(res);
 ```
+
+# Streams
+
+It allows us to process collection of data in a declarative way.
+
+- Overview of Streams
+- Mapping
+- Filtering
+- Slicing
+- Sorting
+- Reducing
+- Colletors
+
+Every collection in java has a method stream.
+
+Example of using streams:
+
+``` 
+List<Movie> movies = List.of(
+    new Movie("a", 10),
+    new Movie("b", 15),
+    new Movie("c", 20)
+);
+
+// Imperative Programming
+   int count = 0;
+   for (Movie movie : movies){
+        if (movie.getLikes() > 10)
+        count++;
+}
+
+// Declarative (Functional) Programming
+   movies.stream()
+       .filter(movie -> movie.getLikes() > 10)
+       .count(); // count will count how many movie pass the filter above.
+```
