@@ -365,3 +365,16 @@ movies.stream()
          .distinct()
          .forEach(System.out::println);
 ```
+
+## Peek Elements
+
+We use peek for troubleshooting like below:
+
+``` 
+movies.stream()
+         .filter(movie -> movie.getLikes() > 10)
+         .peek(movie -> System.out.println("filtered: " + movie.getTitle()))
+         .map(Movie::getTitle)
+         .peek(title -> System.out.println("mapped: " + title))
+         .forEach(System.out::println);
+```
