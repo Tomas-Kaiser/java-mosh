@@ -200,3 +200,15 @@ Predicate<String> isLongerThan5 = str -> str.length() > 5;
 boolean res = isLongerThan5.test("sky");
 System.out.println(res);
 ```
+
+Combining predicates:
+
+```
+Predicate<String> hasLeftBrace = str -> str.startsWith("{");
+Predicate<String> hasRightBrace = str -> str.endsWith("}");
+
+// It returns one Predicate object
+Predicate<String> hasLeftAndRightBrace = hasRightBrace.and(hasLeftBrace);
+Boolean res = hasLeftAndRightBrace.test("{key=value}");
+System.out.println(res);
+```
