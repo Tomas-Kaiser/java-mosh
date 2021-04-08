@@ -378,3 +378,22 @@ movies.stream()
          .peek(title -> System.out.println("mapped: " + title))
          .forEach(System.out::println);
 ```
+
+## Reducers
+
+Reducers is a group of operations. It basically reduce the stream of objects
+to single object which is an answer we are looking for. For example:
+
+- `count()` count elements in the stream so this it reduces stream to a number
+of elements of that stream
+- `anyMatch(predicate)`
+- `allMatch(predicate)`
+- `noneMatch(predicate)`
+- `findFirst`
+- `findAny`
+- `max(comparator)`
+- `min(comparator)`
+
+All the above operations are terminate operations it produces the result.
+
+
