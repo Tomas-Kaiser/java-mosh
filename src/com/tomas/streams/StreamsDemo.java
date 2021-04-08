@@ -13,9 +13,20 @@ public class StreamsDemo {
                 new Movie("c", 20)
         );
 
-        Predicate<Movie> isPopular = movie -> movie.getLikes() > 10;
+        // Pagination solution
+        // We have 1000 movies
+        // We want to see 10 movies per page
+        // We are in third page
+        // skip(20) = skip( (page - 1) x pageSize )
+        // limit(10) = limit(pageSize)
+
         movies.stream()
-                .filter(isPopular)
+                .skip(20)
+                .limit(10)
                 .forEach(m -> System.out.println(m.getTitle()));
-    }
+
+        movies.stream()
+            .takeWhile(movie -> movie.getLikes() < 30)
+            .forEach(movie -> movie.getTitle());
+}
 }

@@ -34,8 +34,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="385">
-                <caret line="303" column="4" lean-forward="true" selection-start-line="303" selection-start-column="4" selection-end-line="303" selection-end-column="4" />
+              <first_editor relative-caret-position="326">
+                <caret line="336" column="50" selection-start-line="336" selection-start-column="50" selection-end-line="336" selection-end-column="50" />
               </first_editor>
               <second_editor />
             </state>
@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tomas/streams/StreamsDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="64" />
+            <state relative-caret-position="88">
+              <caret line="15" selection-start-line="15" selection-end-line="29" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -276,8 +276,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tomas/streams/StreamsDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="64" />
+        <state relative-caret-position="88">
+          <caret line="15" selection-start-line="15" selection-end-line="29" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -287,8 +287,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="385">
-            <caret line="303" column="4" lean-forward="true" selection-start-line="303" selection-start-column="4" selection-end-line="303" selection-end-column="4" />
+          <first_editor relative-caret-position="326">
+            <caret line="336" column="50" selection-start-line="336" selection-start-column="50" selection-end-line="336" selection-end-column="50" />
           </first_editor>
           <second_editor />
         </state>

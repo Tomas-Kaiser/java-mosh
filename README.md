@@ -272,7 +272,7 @@ a stream.
 If we have `int[] numbers` then we have to use
 `Arrays.stream(numbers).forEach(n -> System.out.println(n)`.
 
- ## Map
+ ## Mapping
  
  To transform the value in a string. To do that we use:
  
@@ -302,3 +302,36 @@ movies.stream()
       .filter(isPopular)
       .forEach(m -> System.out.println(m.getTitle()));
  ```
+ 
+ ## Slicing
+ 
+ We have several method to slice a stream:
+ 
+ - limit(n)
+ - skip(n)
+ - takeWhile(predicate)
+ - dropWhile(predicate)
+ 
+ ``` 
+// Pagination solution
+// We have 1000 movies
+// We want to see 10 movies per page
+// We are in third page
+// skip(20) = skip( (page - 1) x pageSize )
+// limit(10) = limit(pageSize)
+         
+movies.stream()
+           .skip(20)
+           .limit(10)
+           .forEach(m -> System.out.println(m.getTitle()));
+ 
+movies.stream()
+         .takeWhile(movie -> movie.getLikes() < 30)
+         .forEach(movie -> movie.getTitle());
+ ```
+ 
+ The difference between takeWhile & filter is that the filter method iterates through
+ out the whole list but takeWhile is iterating through a list until the condition
+ is met. Once it returns false it terminates the iteration.
+ 
+ The dropWhile method is an opposite of takeWhile.
