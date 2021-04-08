@@ -354,3 +354,14 @@ movies.stream()
 
 Instead of using `m -> m.getTitle()` we can use method reference
 `Movie::getTitle`
+
+## Getting Unique Elements
+
+To get only unique values we can use `.distinct()`
+
+```  
+movies.stream()
+         .map(Movie::getLikes)
+         .distinct()
+         .forEach(System.out::println);
+```
