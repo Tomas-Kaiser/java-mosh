@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="89ceceb3-e783-42ef-9c7a-d052a17a33e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tomas/lambdas/LambdasDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tomas/lambdas/LambdasDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +69,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="304">
-                <caret line="212" selection-start-line="212" selection-end-line="212" />
+              <first_editor relative-caret-position="132">
+                <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
               </first_editor>
               <second_editor />
             </state>
@@ -213,7 +212,7 @@
       <window_info anchor="bottom" id="Azure Activity Log" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32893" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32893" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -272,8 +271,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="212" selection-start-line="212" selection-end-line="212" />
+          <first_editor relative-caret-position="132">
+            <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           </first_editor>
           <second_editor />
         </state>
