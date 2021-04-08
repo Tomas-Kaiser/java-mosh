@@ -335,3 +335,22 @@ movies.stream()
  is met. Once it returns false it terminates the iteration.
  
  The dropWhile method is an opposite of takeWhile.
+ 
+ ## Sorting
+ 
+ To sort eg. the movies we have two options:
+
+1. we can implement an comparable interface into movie and then use `.sorted()`
+method
+2. we can give provide an comparable interface as an argument see more below
+
+``` 
+movies.stream()
+       // This is a one way or we can use static method Comparator
+       // .sorted((a, b) -> a.getTitle().compareTo(b.getTitle()))
+        .sorted(Comparator.comparing(m -> m.getTitle()))
+        .forEach(m -> System.out.println(m));
+```
+
+Instead of using `m -> m.getTitle()` we can use method reference
+`Movie::getTitle`
