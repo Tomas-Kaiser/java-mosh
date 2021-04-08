@@ -190,3 +190,13 @@ System.out.println(res);
 String result = addBraces.compose(replaceColon).apply("key:value");
 System.out.println(result);
 ```
+
+### Predicate Interface
+
+It is very useful interface. It accepts one argument and returns boolean.
+
+```
+Predicate<String> isLongerThan5 = str -> str.length() > 5;
+boolean res = isLongerThan5.test("sky");
+System.out.println(res);
+```
