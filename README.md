@@ -289,3 +289,16 @@ Stream.of(List.of(1,2,3), List.of(4,5,6))
       .flatMap(list -> list.stream())
       .forEach(n -> System.out.println(n));
  ```
+ 
+ ## Filtering
+ 
+ We have two kind of operation:
+ - Intermediate (map, filter ...). Those returns a new Stream
+ - Terminal (forEach). This terminate a Stream.
+ 
+ ``` 
+Predicate<Movie> isPopular = movie -> movie.getLikes() > 10;
+movies.stream()
+      .filter(isPopular)
+      .forEach(m -> System.out.println(m.getTitle()));
+ ```

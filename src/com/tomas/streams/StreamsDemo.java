@@ -2,6 +2,7 @@ package com.tomas.streams;
 
 import java.sql.SQLOutput;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 public class StreamsDemo {
@@ -12,13 +13,9 @@ public class StreamsDemo {
                 new Movie("c", 20)
         );
 
+        Predicate<Movie> isPopular = movie -> movie.getLikes() > 10;
         movies.stream()
-                .map(movie -> movie.getTitle())
-                .forEach(title -> System.out.println(title));
-
-        // Using flatMap when we have two collections
-        Stream.of(List.of(1,2,3), List.of(4,5,6))
-                .flatMap(list -> list.stream())
-                .forEach(n -> System.out.println(n));
+                .filter(isPopular)
+                .forEach(m -> System.out.println(m.getTitle()));
     }
 }
