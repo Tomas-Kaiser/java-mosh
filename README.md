@@ -248,3 +248,28 @@ List<Movie> movies = List.of(
        .filter(movie -> movie.getLikes() > 10)
        .count(); // count will count how many movie pass the filter above.
 ```
+
+## Creating Streams
+
+We have several way to create streams:
+
+- From collection
+- Form arrays
+- From an arbitrary number of objects `Stream.of(1,2,3);`
+- Infinite/finite streams `Stream.generate(() -> Math.random());`
+
+To generate just three random number:
+``` 
+Stream stream = Stream.generate(() -> Math.random());
+stream
+   .limit(3)
+   .forEach(n -> System.out.println(n));
+```
+
+Every class that implements the collection interface has the ability to return
+a stream.
+
+If we have `int[] numbers` then we have to use
+`Arrays.stream(numbers).forEach(n -> System.out.println(n)`.
+
+ 
