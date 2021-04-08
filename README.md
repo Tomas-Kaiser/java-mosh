@@ -272,4 +272,20 @@ a stream.
 If we have `int[] numbers` then we have to use
 `Arrays.stream(numbers).forEach(n -> System.out.println(n)`.
 
+ ## Map
  
+ To transform the value in a string. To do that we use:
+ 
+ - map()
+ - flatMap()
+ 
+ ``` 
+movies.stream()
+           .map(movie -> movie.getTitle())
+           .forEach(title -> System.out.println(title));
+ 
+// Using flatMap when we have two collections
+Stream.of(List.of(1,2,3), List.of(4,5,6))
+      .flatMap(list -> list.stream())
+      .forEach(n -> System.out.println(n));
+ ```
