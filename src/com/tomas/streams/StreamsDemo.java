@@ -12,27 +12,11 @@ public class StreamsDemo {
                 new Movie("c", 20, Genre.ACTION)
         );
 
-        // res is a Map<Genre, List<Movie>>
-        var res1 = movies.stream()
-                .collect(Collectors.groupingBy(Movie::getGenre));
+        var result = movies.stream()
+                        .collect(Collectors.partitioningBy(m -> m.getLikes() > 15,
+                                                            Collectors.mapping(Movie::getTitle,
+                                                            Collectors.joining(","))));
 
-        // we can supply the second argument
-        // res is a Map<Genre, Set<Movie>>
-        var res2 = movies.stream()
-                .collect(Collectors.groupingBy(Movie::getGenre, Collectors.toSet()));
-
-        // to count each movie of each genre
-        var res3 = movies.stream()
-                .collect(Collectors.groupingBy(Movie::getGenre, Collectors.counting()));
-        // output: {THRILLER=1, ACTION=2}
-
-        // We can also join movies
-        var res4 = movies.stream()
-                .collect(Collectors.groupingBy(Movie::getGenre,
-                         Collectors.mapping(Movie::getTitle,
-                                            Collectors.joining(","))));
-        // output: {THRILLER=a, ACTION=b,c}
-
-        System.out.println(res1);
+        System.out.println(result);
     }
 }

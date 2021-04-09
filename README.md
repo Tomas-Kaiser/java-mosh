@@ -455,3 +455,15 @@ var res4 = movies.stream()
                                             Collectors.joining(","))));
 // output: {THRILLER=a, ACTION=b,c}
 ```
+
+## Partitioning Elements
+
+eg:
+
+``` 
+var result = movies.stream()
+               .collect(Collectors.partitioningBy(m -> m.getLikes() > 15,
+                                                  Collectors.mapping(Movie::getTitle,
+                                                  Collectors.joining(","))));
+    // output: {false=a,b, true=c}                                                  
+```
