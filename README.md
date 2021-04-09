@@ -396,4 +396,19 @@ of elements of that stream
 
 All the above operations are terminate operations it produces the result.
 
+## Reducing a Stream
 
+To sum all likes we can use reduce:
+
+```  
+Optional<Integer> sum = movies.stream()
+          .map(m -> m.getLikes())
+          .reduce((a, b) -> a + b);
+          // or we can pass a reference to this method Integer::sum
+
+// This can throw an exception if it returns a null
+sum.get();
+// To prevent this we can use orElse where we supply a default value
+sum.orElse(0);
+System.out.println(sum.orElse(0));
+```
