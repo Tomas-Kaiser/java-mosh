@@ -428,3 +428,30 @@ var result = movies.stream()
       
       System.out.println(result);
 ```
+
+## Grouping Elements
+
+eg:
+
+``` 
+// res is a Map<Genre, List<Movie>>
+var res1 = movies.stream()
+                .collect(Collectors.groupingBy(Movie::getGenre));
+
+// we can supply the second argument
+// res is a Map<Genre, Set<Movie>>
+var res2 = movies.stream()
+                .collect(Collectors.groupingBy(Movie::getGenre, Collectors.toSet()));
+
+// to count each movie of each genre
+var res3 = movies.stream()
+                .collect(Collectors.groupingBy(Movie::getGenre, Collectors.counting()));
+// output: {THRILLER=1, ACTION=2}
+
+// We can also join movies
+var res4 = movies.stream()
+                .collect(Collectors.groupingBy(Movie::getGenre,
+                         Collectors.mapping(Movie::getTitle,
+                                            Collectors.joining(","))));
+// output: {THRILLER=a, ACTION=b,c}
+```
