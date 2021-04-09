@@ -412,3 +412,19 @@ sum.get();
 sum.orElse(0);
 System.out.println(sum.orElse(0));
 ```
+
+## Collectors
+
+We use Collectors to convert output of the stream to a data structure
+
+```  
+var result = movies.stream()
+      .filter(m -> m.getLikes() > 10)
+      // Function.identity returns the object it self (in this case the movie) instead of writing
+      // m -> m
+//      .collect(Collectors.toMap(m -> m.getTitle(), Function.identity()));
+      // to summarizing
+        .collect(Collectors.summarizingInt(Movie::getLikes));
+      
+      System.out.println(result);
+```
